@@ -1,7 +1,12 @@
 # For more info on HTTP files go to https://aka.ms/vs/httpfile
-
+//GetAll
 send Request
 GET http://localhost:5167/todos
+
+###
+//GetById
+send Request
+GET http://localhost:5167/todos/3
 
 ###
 
@@ -11,15 +16,24 @@ content-type: application/json
 
 
 {
-    "id": 2,
-    "name": "Write another Demo",
+    "id": 1,
+    "name": "Write Demo 1",
     "DueDate": "2024-11-10",
     "isCompleted": false
 }
 
 ###
+//DeleteById
+send Request
+DELETE http://localhost:5167/todos/2
+###
+
 send Request
 DELETE http://localhost:5167/todos
+###
+
+GET http://localhost:5167/tasks/1 
+
 ###
 
 
