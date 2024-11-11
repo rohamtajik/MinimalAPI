@@ -1,0 +1,25 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+send Request
+GET http://localhost:5167/todos
+
+###
+
+send Request
+POST http://localhost:5167/todos
+content-type: application/json 
+
+
+{
+    "id": 2,
+    "name": "Write another Demo",
+    "DueDate": "2024-11-10",
+    "isCompleted": false
+}
+
+###
+send Request
+DELETE http://localhost:5167/todos
+###
+
+
